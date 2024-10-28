@@ -1,0 +1,12 @@
+#!/bin/bash
+
+PACKAGES=""
+PACKAGES="$PACKAGES -dnsmasq"
+PACKAGES="$PACKAGES dnsmasq-full"
+PACKAGES="$PACKAGES curl"
+PACKAGES="$PACKAGES luci"
+PACKAGES="$PACKAGES luci-i18n-base-zh-cn"
+PACKAGES="$PACKAGES luci-i18n-firewall-zh-cn"
+PACKAGES="$PACKAGES luci-i18n-opkg-zh-cn"
+
+make image PACKAGES="$PACKAGES" ROOTFS_PARTSIZE="512"
