@@ -5,7 +5,6 @@ OpenWrt-Docker Image Builder
 确保docker空间充足，否则可能空间不足无法构建（至少1G以上）
 
 创建普通用户：
-
 BASHCopy
 opkg update                                            # 更新软件包列表
 opkg install sudo shadow-useradd                       # 安装必要软件
